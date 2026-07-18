@@ -1,4 +1,5 @@
-import { Montserrat, Poppins, Archivo_Black } from "next/font/google";
+import { Montserrat, Poppins } from "next/font/google";
+import localFont from "next/font/local";
 
 // Body copy — friendly geometric sans.
 export const poppins = Poppins({
@@ -14,21 +15,19 @@ export const montserrat = Montserrat({
   weight: ["500", "600", "700", "800"],
 });
 
-// Placeholder for the brand display face (Akira Expanded, licensed — not
-// available yet). Archivo Black stands in for big, heavy hero headlines.
-// To swap in the real font once the files are available, replace this
-// export with next/font/local pointing at the licensed files, e.g.:
-//
-//   import localFont from "next/font/local";
-//   export const display = localFont({
-//     variable: "--font-display",
-//     src: [{ path: "../../assets/fonts/AkiraExpanded.woff2", weight: "700" }],
-//   });
-//
-// Every component below reads the font through the --font-display variable,
-// so no other file needs to change.
-export const archivoBlack = Archivo_Black({
+// Display face for big hero/section headlines — Monument Extended
+// (Pangram Pangram). Stands in for the brand's licensed Akira Expanded
+// until that font is purchased (the file currently in assets/fonts is a
+// personal-use-only demo, not licensed for this commercial site). To swap
+// in Akira Expanded later, point src at the licensed files here — every
+// component reads the font through the --font-display variable, so no
+// other file needs to change.
+export const displayFont = localFont({
   variable: "--font-display",
-  subsets: ["latin"],
-  weight: "400",
+  src: [
+    {
+      path: "../../assets/fonts/MonumentExtended-Regular.otf",
+      weight: "400",
+    },
+  ],
 });

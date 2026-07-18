@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { poppins, montserrat, archivoBlack } from "@/lib/fonts";
+import { poppins, montserrat, displayFont } from "@/lib/fonts";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { site } from "@/lib/site-config";
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${montserrat.variable} ${archivoBlack.variable} h-full antialiased`}
+      className={`${poppins.variable} ${montserrat.variable} ${displayFont.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-paper text-ink">
         <Navbar />
