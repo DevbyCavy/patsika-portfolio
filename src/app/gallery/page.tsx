@@ -8,7 +8,7 @@ import { galleryCategories } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Gallery — Patsika Media House",
   description:
-    "The full Patsika Media House gallery — 3D modeling, design & branding, graphic design, and video editing, organised by discipline.",
+    "The full Patsika Media House gallery 3D modeling, design & branding, graphic design, and video editing, organised by discipline.",
 };
 
 export default function GalleryPage() {

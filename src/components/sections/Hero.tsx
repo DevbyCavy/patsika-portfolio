@@ -26,7 +26,7 @@ export function Hero() {
 
         <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/70">
           A design agency working across branding, 3D, motion, product
-          design, graphic design, and video — for founders building
+          design, graphic design, and video for founders building
           something worth noticing.
         </p>
 

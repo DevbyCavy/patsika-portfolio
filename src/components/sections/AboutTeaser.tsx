@@ -15,7 +15,7 @@ export function AboutTeaser() {
         <SectionHeading
           eyebrow="About Patsika"
           title="A young studio, built to move fast."
-          description="Patsika Media House started as a small collective of designers, animators, and editors who wanted to work across the full spectrum of brand-building — not just one slice of it. We partner closely with founders and teams who need a studio that can carry an idea from a name on a page to a finished film."
+          description="Patsika Media House started as a small collective of designers, animators, and editors who wanted to work across the full spectrum of brand-building not just one slice of it. We partner closely with founders and teams who need a studio that can carry an idea from a name on a page to a finished film."
         />
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:gap-4">
