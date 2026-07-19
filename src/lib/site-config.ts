@@ -6,6 +6,15 @@ export const site = {
     "Patsika Media House is a design agency working across branding, 3D, motion, product design, graphic design, and video — for founders building something worth noticing.",
   email: "hello@patsika.studio",
   location: "Worldwide, remote-first",
+  phones: ["+263 78 668 6261", "+263 71 561 0868"],
+  whatsapp: {
+    number: "+263 71 561 0868",
+    href: "https://wa.me/263715610868",
+  },
+  whatsappChannel: {
+    label: "Follow the PATSIKA Pvt Ltd channel on WhatsApp",
+    href: "https://whatsapp.com/channel/0029Vb88UdvKLaHi2vA8600H",
+  },
   social: [
     { label: "Instagram", href: "https://instagram.com" },
     { label: "Behance", href: "https://behance.net" },
@@ -15,6 +24,7 @@ export const site = {
 
 export const navLinks = [
   { label: "Work", href: "/work" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
@@ -271,5 +281,91 @@ export const work: WorkItem[] = [
     blurb: "A self-directed concept billboard, not a commissioned client project.",
     media: { kind: "image", src: "/work/images/concept-ford-ranger.jpg" },
     concept: true,
+  },
+];
+
+export type GalleryImage = {
+  src: string;
+  width: number;
+  height: number;
+  caption: string;
+  concept?: boolean;
+  /** For video posters — links through to the playable clip on /work */
+  workSlug?: string;
+};
+
+export type GalleryCategory = {
+  slug: string;
+  name: string;
+  description: string;
+  images: GalleryImage[];
+};
+
+export const galleryCategories: GalleryCategory[] = [
+  {
+    slug: "3d-modeling",
+    name: "3D Modeling",
+    description:
+      "Exhibition stands and trade-fair environments, from structure to signage.",
+    images: [
+      { src: "/work/images/mutapa-investment-fund.jpg", width: 1600, height: 900, caption: "Mutapa Investment Fund" },
+      { src: "/work/images/ministry-industry-commerce.jpg", width: 1600, height: 900, caption: "Ministry of Industry & Commerce" },
+      { src: "/gallery/ministry-of-justice.jpg", width: 1600, height: 900, caption: "Ministry of Justice, Legal & Parliamentary Affairs" },
+      { src: "/work/images/magaya-mining.jpg", width: 1600, height: 900, caption: "Magaya Mining — Mine Entra 2026" },
+      { src: "/gallery/magaya-mining-2.jpg", width: 1600, height: 900, caption: "Magaya Mining — Mine Entra 2026" },
+      { src: "/work/images/blackbox-henkel.jpg", width: 1600, height: 900, caption: "Blackbox Investments × Henkel" },
+      { src: "/gallery/blackbox-henkel-2.jpg", width: 1600, height: 900, caption: "Blackbox Investments × Henkel" },
+      { src: "/gallery/adk-event.jpg", width: 1600, height: 900, caption: "ADK — event space" },
+    ],
+  },
+  {
+    slug: "design-branding",
+    name: "Design & Branding",
+    description: "Logo systems and applied brand collateral.",
+    images: [
+      { src: "/work/images/brand-systems.jpg", width: 1600, height: 1128, caption: "Jast Steel & Hardware, Bishop A.T Muzorewa University" },
+      { src: "/work/images/magic-moments-logo.jpg", width: 1600, height: 1600, caption: "Magic Moments" },
+    ],
+  },
+  {
+    slug: "graphic-design",
+    name: "Graphic Design",
+    description: "Flyers, posters, editorial covers, and campaign design.",
+    images: [
+      { src: "/work/images/curtains-and-blinds.jpg", width: 1140, height: 1600, caption: "Curtains & Blinds Boulevard" },
+      { src: "/work/images/flyer-campaigns.jpg", width: 1128, height: 1600, caption: "Holy Ghost Prep School, Princess Beauty Salon, and others" },
+      { src: "/work/images/mosi-oa-tunya-magazine.jpg", width: 1236, height: 1600, caption: "Mosi-oa-Tunya — Issue No. 1" },
+      { src: "/gallery/magazine-layout-trio.jpg", width: 1600, height: 900, caption: "Musango, Captured, Console — magazine covers" },
+      { src: "/gallery/zviri-mumaoko-exhibition.jpg", width: 1200, height: 1600, caption: "“Zviri Mumaoko” art exhibition poster" },
+      { src: "/gallery/harvest-link-posters.jpg", width: 1600, height: 900, caption: "Harvest Link — poster campaign" },
+      { src: "/gallery/predict-and-win.jpg", width: 1500, height: 1500, caption: "SugarCane Bites — Predict & Win campaign" },
+      { src: "/gallery/church-flyer-night-of-change.jpg", width: 1600, height: 1600, caption: "Acts of the Apostles — event flyer" },
+      { src: "/gallery/church-flyer-ane-chimuti.jpg", width: 1600, height: 1600, caption: "Tabernacle of Power Church — event flyer" },
+      { src: "/gallery/illustration-portfolio.jpg", width: 1600, height: 900, caption: "Character illustration practice" },
+      {
+        src: "/work/images/concept-apple-billboard.jpg",
+        width: 1600,
+        height: 467,
+        caption: "Apple iPhone 17 Pro — concept ad",
+        concept: true,
+      },
+      {
+        src: "/work/images/concept-ford-ranger.jpg",
+        width: 1600,
+        height: 467,
+        caption: "Ford Ranger — concept billboard",
+        concept: true,
+      },
+    ],
+  },
+  {
+    slug: "video-editing",
+    name: "Video Editing",
+    description: "Brand films and ad edits — tap a still to watch on the Work page.",
+    images: [
+      { src: "/work/video/crocs-ad-poster.jpg", width: 1280, height: 720, caption: "Crocs — brand video edit", workSlug: "crocs-ad" },
+      { src: "/work/video/musango-poster.jpg", width: 1280, height: 720, caption: "Musango — brand film edit", workSlug: "musango" },
+      { src: "/work/video/vic-falls-poster.jpg", width: 1280, height: 720, caption: "Victoria Falls — aerial brand film", workSlug: "vic-falls" },
+    ],
   },
 ];

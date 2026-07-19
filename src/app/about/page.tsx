@@ -17,7 +17,7 @@ const values = [
   },
   {
     title: "Built for founders",
-    body: "We work best with teams who are close to the decision — so ideas move fast, and the work stays sharp.",
+    body: "We work best with teams who are close to the decision so ideas move fast, and the work stays sharp.",
   },
   {
     title: "Craft over templates",
@@ -39,7 +39,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Our story"
             title="From one discipline to six."
-            description="Patsika began as a small design and motion practice, and grew into a full studio as clients kept asking for the next piece of the puzzle — a 3D render, a product interface, a launch video. Rather than hand that work off, we built the team to do it ourselves. Today Patsika Media House covers branding, 3D modeling, motion graphics, UI/UX and product design, graphic design, and video editing, for clients working across markets and time zones."
+            description="Patsika began as a small design and motion practice, and grew into a full studio as clients kept asking for the next piece of the puzzle a 3D render, a product interface, a launch video. Rather than hand that work off, we built the team to do it ourselves. Today Patsika Media House covers branding, 3D modeling, motion graphics, UI/UX and product design, graphic design, and video editing, for clients working across markets and time zones."
           />
 
           <div className="space-y-10">

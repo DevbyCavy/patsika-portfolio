@@ -38,6 +38,44 @@ export default function ContactPage() {
               </li>
               <li>
                 <span className="font-heading block text-xs font-semibold uppercase tracking-wide text-muted">
+                  Phone
+                </span>
+                <div className="flex flex-col">
+                  {site.phones.map((phone) => (
+                    <a
+                      key={phone}
+                      href={`tel:${phone.replace(/\s+/g, "")}`}
+                      className="text-ink hover:text-accent"
+                    >
+                      {phone}
+                    </a>
+                  ))}
+                </div>
+              </li>
+              <li>
+                <span className="font-heading block text-xs font-semibold uppercase tracking-wide text-muted">
+                  WhatsApp
+                </span>
+                <a
+                  href={site.whatsapp.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-ink hover:text-accent"
+                >
+                  {site.whatsapp.number}
+                </a>
+                <span className="mx-2 text-line">·</span>
+                <a
+                  href={site.whatsappChannel.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-ink hover:text-accent"
+                >
+                  Follow our channel
+                </a>
+              </li>
+              <li>
+                <span className="font-heading block text-xs font-semibold uppercase tracking-wide text-muted">
                   Location
                 </span>
                 {site.location}

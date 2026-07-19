@@ -7,7 +7,7 @@ import { services } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Services — Patsika Media House",
   description:
-    "Branding, 3D modeling, motion graphics, UI/UX & product design, graphic design, and video editing — under one studio.",
+    "Branding, 3D modeling, motion graphics, UI/UX & product design, graphic design, and video editing under one studio.",
 };
 
 export default function ServicesPage() {

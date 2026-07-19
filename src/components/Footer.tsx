@@ -46,6 +46,36 @@ export function Footer() {
                   {site.email}
                 </a>
               </li>
+              {site.phones.map((phone) => (
+                <li key={phone}>
+                  <a
+                    href={`tel:${phone.replace(/\s+/g, "")}`}
+                    className="font-heading text-sm font-semibold text-white/80 hover:text-accent"
+                  >
+                    {phone}
+                  </a>
+                </li>
+              ))}
+              <li>
+                <a
+                  href={site.whatsapp.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-heading text-sm font-semibold text-white/80 hover:text-accent"
+                >
+                  WhatsApp: {site.whatsapp.number}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={site.whatsappChannel.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-heading text-sm font-semibold text-white/80 hover:text-accent"
+                >
+                  WhatsApp Channel
+                </a>
+              </li>
               <li className="text-sm text-white/50">{site.location}</li>
               <li className="flex gap-4 pt-2">
                 {site.social.map((s) => (
