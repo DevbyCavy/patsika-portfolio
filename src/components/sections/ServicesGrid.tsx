@@ -10,7 +10,7 @@ export function ServicesGrid() {
         <SectionHeading
           eyebrow="What we do"
           title="Six disciplines, one studio."
-          description="From the first mark to the final cut — we cover the full range of what a growing brand needs, under one roof."
+          description="From the first mark to the final cut, we cover the full range of what a growing brand needs, under one roof."
         />
 
         <div className="mt-16 grid gap-px overflow-hidden rounded-3xl border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">

@@ -31,7 +31,7 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="About Patsika"
         title="A studio built to carry an idea all the way through."
-        description="We started Patsika Media House because good brands kept getting split across too many vendors. We wanted one studio that could hold the whole picture."
+        description="We started Patsika Media House because good brands kept getting split across too many vendors. We wanted one remote-first studio that could hold the whole picture."
       />
 
       <section className="py-24 sm:py-32">
@@ -61,4 +61,3 @@ export default function AboutPage() {
     </>
   );
 }
-1

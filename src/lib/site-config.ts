@@ -4,8 +4,8 @@ export const site = {
   tagline: "We build brands that move.",
   description:
     "Patsika Media House is a design agency working across branding, 3D, motion, product design, graphic design, and video for founders building something worth noticing.",
-  email: "hello@patsika.studio",
-  location: "Worldwide, remote-first",
+  email: "hello@patsika.art",
+  location: "HARARE, remote-first",
   phones: ["+263 78 668 6251", "+263 71 561 0868"],
   whatsapp: {
     number: "+263 71 561 0868",
