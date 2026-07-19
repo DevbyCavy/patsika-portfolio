@@ -107,7 +107,7 @@ export function ContactForm() {
 
       {status === "sent" && (
         <p className="text-sm text-muted">
-          Opening your email client — if nothing happened, write to us
+          Opening your email client. If nothing happened, write to us
           directly at{" "}
           <a href={`mailto:${site.email}`} className="text-accent underline">
             {site.email}

@@ -3,10 +3,10 @@ export const site = {
   fullName: "Patsika Media House",
   tagline: "We build brands that move.",
   description:
-    "Patsika Media House is a design agency working across branding, 3D, motion, product design, graphic design, and video — for founders building something worth noticing.",
+    "Patsika Media House is a design agency working across branding, 3D, motion, product design, graphic design, and video for founders building something worth noticing.",
   email: "hello@patsika.studio",
   location: "Worldwide, remote-first",
-  phones: ["+263 78 668 6261", "+263 71 561 0868"],
+  phones: ["+263 78 668 6251", "+263 71 561 0868"],
   whatsapp: {
     number: "+263 71 561 0868",
     href: "https://wa.me/263715610868",
@@ -16,9 +16,9 @@ export const site = {
     href: "https://whatsapp.com/channel/0029Vb88UdvKLaHi2vA8600H",
   },
   social: [
-    { label: "Instagram", href: "https://instagram.com" },
-    { label: "Behance", href: "https://behance.net" },
-    { label: "LinkedIn", href: "https://linkedin.com" },
+    { label: "Instagram", href: "https://www.instagram.com/patsika.art?igsh=MXBzN2h3eTJzaXcxeA%3D%3D&utm_source=qr" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/company/patsika-design-agency/" },
+    { label: "Facebook", href: "https://www.facebook.com/share/15y6hrz2dRq/?mibextid=wwXIfr" },
   ],
 };
 
